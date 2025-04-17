@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Books</title>
+</head>
+<body>
+  <h1>Library Book List</h1>
+  <ul>
+    <% books.forEach(book => { %>
+      <li>
+        <strong><%= book.title %></strong> by <%= book.author %>
+        (<%= book.available ? 'Available' : 'Not Available' %>)
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
